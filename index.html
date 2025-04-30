@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Raqib</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+      background-color: #fdfdfd;
+      color: #222;
+    }
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to bottom right, #0f172a, #1e293b);
+      color: white;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 4rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.25rem;
+      margin-top: 0;
+    }
+    .down-arrow {
+      margin-top: 3rem;
+      font-size: 2rem;
+      animation: bounce 2s infinite;
+      cursor: pointer;
+    }
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(10px);
+      }
+    }
+    section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 4rem 1rem;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5rem;
+    }
+    .experience {
+      margin-bottom: 2rem;
+    }
+    .experience h3 {
+      margin: 0;
+      font-size: 1.25rem;
+      color: #0f172a;
+    }
+    .experience span {
+      font-size: 0.9rem;
+      color: #666;
+    }
+    .experience p {
+      margin-top: 0.5rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Muhammad Raqib</h1>
+    <p>Full-Stack Software Engineer</p>
+    <a href="#experience" class="down-arrow">&#8595;</a>
+  </header>
+
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <div class="experience">
+      <h3>Senior Software Engineer – ZT Systems</h3>
+      <span>Sep 2024 – Present · New Jersey, USA</span>
+      <p>Building in-house server management software to support thousands of machines globally. Focused on real-time data updates and robust backend systems using GraphQL and MongoDB.</p>
+    </div>
+
+    <div class="experience">
+      <h3>Software Engineer II – Reply / Stellantis</h3>
+      <span>Aug 2022 – Oct 2023 · Chicago, IL</span>
+      <p>Contributed to Stellantis’ unified digital platform. Led development for subscription features using Java, Spring Boot, and modern web stacks.</p>
+    </div>
+
+    <div class="experience">
+      <h3>Software Engineer – Anitian</h3>
+      <span>Feb 2021 – Jul 2022 · Portland, OR</span>
+      <p>Worked on Document Automation software for FedRamp. Delivered MVPs from concept to production with cross-functional teams.</p>
+    </div>
+
+    <div class="experience">
+      <h3>Junior Software Engineer – Dotdash</h3>
+      <span>Jan 2020 – Jan 2021 · NYC, NY</span>
+      <p>Maintained and improved internal CI/CD tools using React and Express.js. Enhanced deployment reliability for internal teams.</p>
+    </div>
+  </section>
+</body>
+</html>
