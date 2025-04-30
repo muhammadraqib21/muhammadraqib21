@@ -38,12 +38,8 @@
       cursor: pointer;
     }
     @keyframes bounce {
-      0%, 100% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(10px);
-      }
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(10px); }
     }
     section {
       max-width: 800px;
@@ -56,21 +52,25 @@
       border-bottom: 2px solid #ddd;
       padding-bottom: 0.5rem;
     }
-    .experience {
+    .experience, .project {
       margin-bottom: 2rem;
     }
-    .experience h3 {
+    .experience h3, .project h3 {
       margin: 0;
       font-size: 1.25rem;
       color: #0f172a;
     }
-    .experience span {
+    .experience span, .project span {
       font-size: 0.9rem;
       color: #666;
     }
-    .experience p {
+    .experience p, .project p {
       margin-top: 0.5rem;
       line-height: 1.6;
+    }
+    .tech-icons img {
+      margin: 0.5rem;
+      vertical-align: middle;
     }
   </style>
 </head>
@@ -83,30 +83,80 @@
 
   <section id="experience">
     <h2>Experience</h2>
-
     <div class="experience">
       <h3>Senior Software Engineer – ZT Systems</h3>
       <span>Sep 2024 – Present · New Jersey, USA</span>
       <p>Building in-house server management software to support thousands of machines globally. Focused on real-time data updates and robust backend systems using GraphQL and MongoDB.</p>
     </div>
-
     <div class="experience">
       <h3>Software Engineer II – Reply / Stellantis</h3>
       <span>Aug 2022 – Oct 2023 · Chicago, IL</span>
       <p>Contributed to Stellantis’ unified digital platform. Led development for subscription features using Java, Spring Boot, and modern web stacks.</p>
     </div>
-
     <div class="experience">
       <h3>Software Engineer – Anitian</h3>
       <span>Feb 2021 – Jul 2022 · Portland, OR</span>
       <p>Worked on Document Automation software for FedRamp. Delivered MVPs from concept to production with cross-functional teams.</p>
     </div>
-
     <div class="experience">
       <h3>Junior Software Engineer – Dotdash</h3>
       <span>Jan 2020 – Jan 2021 · NYC, NY</span>
       <p>Maintained and improved internal CI/CD tools using React and Express.js. Enhanced deployment reliability for internal teams.</p>
     </div>
   </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a software engineer passionate about building reliable, scalable systems that solve real-world problems.
+      I’ve worked across e-commerce, infrastructure tooling, and security automation—always with a focus on clean code and developer efficiency.
+      Outside of work, I enjoy chess, side projects, and writing about tech, AI, and software culture.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>🕶️ Glasses Finder App</h3>
+      <p>Built a shopping assistant that takes a designer glasses URL and finds affordable alternatives using scraping and image matching.</p>
+      <p><strong>Stack:</strong> Apify, MongoDB, Express, React</p>
+      <img src="images/glasses-demo.png" alt="Glasses Finder Demo" style="max-width:100%; border-radius:8px;" />
+    </div>
+    <div class="project">
+      <h3>📊 Review Moderation Dashboard</h3>
+      <p>Developed a dashboard to review and moderate user-generated content with AI filters and status tracking.</p>
+      <p><strong>Stack:</strong> React, OneTrust API, Python</p>
+      <img src="images/dashboard-demo.png" alt="Dashboard Preview" style="max-width:100%; border-radius:8px;" />
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="tech-icons">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" alt="React" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="40" alt="Java" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" alt="Python" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="40" alt="Node.js" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" width="40" alt="MongoDB" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" width="40" alt="GraphQL" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" width="40" alt="Terraform" />
+    </div>
+  </section>
+
+  <section id="writing">
+    <h2>Writing</h2>
+    <ul>
+      <li><a href="https://medium.com/@yourname/growing-as-a-developer-in-the-age-of-ai">How to Grow as a Developer in the Age of AI</a> – 3 min read</li>
+      <li><a href="https://medium.com/@yourname/when-ai-replaces-thinking">When AI Replaces Thinking: A Risk for Junior Devs</a> – 4 min read</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📍 New York City Metro</p>
+    <p>📧 <a href="mailto:muhammad.raqib1@gmail.com">muhammad.raqib1@gmail.com</a></p>
+    <p>🔗 <a href="https://www.linkedin.com/in/muhammad-raqib" target="_blank">LinkedIn Profile</a></p>
+  </section>
 </body>
 </html>
+
